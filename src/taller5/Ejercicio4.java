@@ -15,15 +15,17 @@ import java.io.IOException;
 public class Ejercicio4 {
 
     public static double convertirFahrenheit(double celsius) {
-        // TODO: retornar celsius * 9.0 / 5.0 + 32.0
-        return 0.0;
+        return celsius * 9.0 / 5.0 + 32.0;
     }
 
     public static void main(String[] args) throws IOException {
-        // TODO:
-        // 1. Crear BufferedReader sobre System.in
-        // 2. Pedir la temperatura en Celsius
-        // 3. Mostrar con System.out.printf EXACTO:
-        //      Fahrenheit: X.XX
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Ingrese la temperatura en Celsius: ");
+        double celsius = Double.parseDouble(br.readLine());
+
+        double fahrenheit = convertirFahrenheit(celsius);
+
+        System.out.printf("Fahrenheit: %.2f%n", fahrenheit);
     }
 }
