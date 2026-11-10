@@ -1,12 +1,11 @@
 # Informe — Taller #5 Programación 1
 
-**Nombre completo:** [Escribe tu nombre aquí]
-**Cédula:** [Escribe tu cédula, ej: 8-123-4567]
-**Semilla (últimos 3 dígitos):** [ej: 567]
-**Rama de trabajo:** lab10-[apellido]-[nombre]
-**Fecha:** [YYYY-MM-DD]
+**Nombre completo:** Jorge Pitti
+**Cédula:** 8-976-1637
+**Semilla (últimos 3 dígitos):** 637
+**Rama de trabajo:** lab10-pitti-jorge
+**Fecha:** 2026-11-09
 
 ## Reflexión breve (máximo 5 líneas)
 
-[Explica qué aprendiste sobre JOptionPane, BufferedReader y el flujo de Git/GitHub
-en este taller. No copies de otros compañeros.]
+Aprendí que JOptionPane es util para mostrar ventanas al usuario sin mucho codigo, mientras que BufferedReader te obliga a manejar la exepción IOException lo cual me hizo entender mejor el manejo de errores. También noté que ambas formas de entrada tienen sus ventajas segun el contexto.

@@ -15,14 +15,31 @@ import java.io.IOException;
 public class Ejercicio5 {
 
     public static void main(String[] args) throws IOException {
-        // TODO:
-        // 1. Pedir nombre con JOptionPane.showInputDialog
-        // 2. Pedir edad con JOptionPane.showInputDialog + Integer.parseInt
-        // 3. Leer tres notas con BufferedReader + Double.parseDouble
-        // 4. Crear objeto Estudiante con el constructor
-        // 5. Mostrar con JOptionPane.showMessageDialog EXACTO:
-        //      Nombre: [nombre]
-        //      Edad: [edad]
-        //      Promedio: X.XX
+        // Pedir nombre y edad con JOptionPane
+        String nombre = JOptionPane.showInputDialog("Ingrese el nombre del estudiante:");
+        String edadStr = JOptionPane.showInputDialog("Ingrese la edad del estudiante:");
+        int edad = Integer.parseInt(edadStr);
+
+        // Pedir las tres notas con BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Ingrese la nota 1: ");
+        double nota1 = Double.parseDouble(br.readLine());
+
+        System.out.print("Ingrese la nota 2: ");
+        double nota2 = Double.parseDouble(br.readLine());
+
+        System.out.print("Ingrese la nota 3: ");
+        double nota3 = Double.parseDouble(br.readLine());
+
+        // Crear objeto Estudiante
+        Estudiante estudiante = new Estudiante(nombre, edad, nota1, nota2, nota3);
+
+        // Mostrar resumen con JOptionPane
+        String mensaje = String.format("Nombre: %s%nEdad: %d%nPromedio: %.2f",
+                estudiante.getNombre(),
+                estudiante.getEdad(),
+                estudiante.getPromedio());
+        JOptionPane.showMessageDialog(null, mensaje);
     }
 }
